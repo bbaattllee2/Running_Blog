@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import useDocumentTitle from './useDocumentTitle';
+import { DatePicker } from 'antd'
 
-function App() {
+const blog_title = "James's Running Blog 🏃‍♂️"
+
+export function Home() {
+
+  useDocumentTitle(`Home | ${blog_title} `);
+
+  return (
+    <>
+      <h1>{blog_title}</h1>
+      <DatePicker />
+    </>
+  )
+}
+
+export function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home />
     </div>
   );
 }
-
-export default App;
