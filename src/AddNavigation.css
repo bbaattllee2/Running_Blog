@@ -1,7 +1,11 @@
 .NavBar {
-    margin-left: 10rem;
-    margin-right: 10rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+    background-color: darkslategray;
 }
